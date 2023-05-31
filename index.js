@@ -10,10 +10,7 @@ const PORT=process.env.PORT || 5000;
 //handling acces control allow origin error using cors npm
 
 //to allow the given domain to access the cookies
-app.use(cors({
-    origin:'https://jolly-croissant-ef782e.netlify.app/',
-    credentials: true
-  }));
+app.use(cors());
 
 //to get data from req.body we must use express.json() middleware
 app.use(express.json())
