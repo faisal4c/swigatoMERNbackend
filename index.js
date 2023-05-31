@@ -11,7 +11,7 @@ const PORT=process.env.PORT || 5000;
 
 //to allow the given domain to access the cookies
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:'https://jolly-croissant-ef782e.netlify.app/',
     credentials: true
   }));
 
