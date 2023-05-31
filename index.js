@@ -28,7 +28,7 @@ app.use(orderRouter);
 
 
 app.get('/',(req,res)=>{
-    res.send("Listening to port ",PORT)
+    console.log("Listening to port ",PORT)
 })
 
 app.listen(PORT);
